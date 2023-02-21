@@ -1,0 +1,46 @@
+body{
+background-image: url("https://cdn.imgchest.com/files/l4necm53l4m.png");
+opacity: .5;
+background-repeat: no-repeat;
+}
+
+
+.container{
+    display: flex;
+    max-width: 1400px;
+    flex-wrap: wrap;
+    
+  
+}
+
+.container > * {
+    background-color: lightblue;
+    font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+    height: 200px;
+    
+    flex-shrink: 1;
+  
+}
+    
+
+.box1{
+    
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 400px;
+    
+}
+
+.box2{
+    flex-grow: 1;
+    
+    
+    
+}
+
+.box3{
+ 
+    
+}
