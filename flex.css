@@ -2,6 +2,7 @@ body{
 background-image: url("https://cdn.imgchest.com/files/l4necm53l4m.png");
 opacity: .5;
 background-repeat: no-repeat;
+background-position:10px 10px;
 }
 
 
@@ -9,17 +10,21 @@ background-repeat: no-repeat;
     display: flex;
     max-width: 1400px;
     flex-wrap: wrap;
+    gap: 10px;
+    
+   
     
   
 }
 
 .container > * {
+    display: flex;
     background-color: lightblue;
     font-size: 10rem;
     color: blue;
     border: 2px dashed blue;
     height: 200px;
-    
+ 
     flex-shrink: 1;
   
 }
@@ -28,19 +33,43 @@ background-repeat: no-repeat;
 .box1{
     
         flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 400px;
+        flex-basis: 1400px;
+        
     
 }
 
 .box2{
     flex-grow: 1;
-    
-    
+    flex-basis: 400px;
+  
     
 }
 
 .box3{
- 
+
+    flex-grow: 1;
+    flex-basis: 800px;
     
 }
+
+.box4{
+    gap:50px;
+    flex-grow: 1;
+    flex-basis: 400px;
+    
+}
+
+.box5{
+ 
+    flex-grow: 1;
+    flex-basis: 400px;
+    
+}
+
+.box6{
+ 
+    flex-grow: 1;
+    flex-basis: 400px;
+    
+}
+
