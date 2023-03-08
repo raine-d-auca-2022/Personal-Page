@@ -21,15 +21,16 @@ body {
 
 .container{
     display: grid;
-    grid-template-rows: 52px 175px 64px   370px  400px  ;
+    grid-template-rows: 52px 175px 64px 370px 72px 325px;
     grid-template-columns: 161px 715px 325px;
     grid-template-areas: 
         "one seven seven"
         "two two two"
         "three three three"
         "four four eight" 
-        "six six ."
-        ". . five"
+        "four four five"
+        "six six five"
+        
         
          ;
 }
