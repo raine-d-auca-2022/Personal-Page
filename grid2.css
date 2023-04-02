@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+
+}
+
+ul{
+   
+   display: flex;
+   font-family: 'Segoe UI';
+   text-transform: uppercase;
+   font-weight: 600;
+   font-size: 15px;
+   background-color: #e0e0e0;
+   list-style: none;
+   padding: 15px 7px;
+   gap: 15px;
+   
+  
+}
+.container > * {
+    
+    border: 2px dashed BLUE;
+   
+    
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 52px 175px 64px 370px 72px 325px ;
+    grid-template-columns: 161px 715px 325px minmax(50px) ;
+    grid-template-areas: 
+        "one seven seven"
+        "two two two"
+        "three three three"
+        "four four eight" 
+        "four four five"
+        "six six five"
+        
+        
+         ;
+}
+
+.box1 {
+    grid-area: one;
+}
+ .box2 {
+    grid-area: two;
+} 
+
+.box3 {
+    grid-area: three;
+}
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+}
+.box6 {
+    grid-area: six;
+}
+
+.box7 {
+    grid-area: seven;
+}
+.box8 {
+    grid-area: eight;
+}
