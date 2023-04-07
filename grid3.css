@@ -54,10 +54,9 @@ li{
 
 .container{
     display: grid;
-    flex-wrap: wrap;
     
-    grid-template-rows: 52px 175px 64px 370px 72px 325px ;
-    grid-template-columns: 161px 715px 325px minmax(20px, auto)  ;
+    grid-template-rows: minmax(52px, auto) minmax(175px, auto) minmax(64px, auto) minmax(370px, auto) minmax(72px, auto) minmax(325px, auto) ;
+    grid-template-columns: minmax(20px, 161px) minmax(20px, 715px) minmax(20px, 325px) ;
     grid-template-areas: 
         "one seven seven"
         "two two two"
