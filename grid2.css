@@ -3,12 +3,18 @@
     box-sizing: border-box;
 }
 body {
-
+    background-image: url(https://cdn.imgchest.com/files/6yxkcg98k7w.png);
+    background-repeat: no-repeat;
+    max-width: 1206px;
+    min-height: 1063px;
+    font-size: 2rem;
+    opacity: .5;
 }
 
 ul{
-   
+
    display: flex;
+   flex-wrap: wrap;
    font-family: 'Segoe UI';
    text-transform: uppercase;
    font-weight: 600;
@@ -29,8 +35,9 @@ ul{
 
 .container{
     display: grid;
-    grid-template-rows: 52px 175px 64px 370px 72px 325px ;
-    grid-template-columns: 161px 715px 325px minmax(50px) ;
+    flex-wrap: wrap;
+    grid-template-rows: minmax(52px, auto) minmax(175px, auto) minmax(64px, auto) minmax(370px, auto) minmax(72px, auto) minmax(325px, auto) ;
+    grid-template-columns: minmax(20px, 161px) minmax(20px, 715px) minmax(20px, 325px) ;
     grid-template-areas: 
         "one seven seven"
         "two two two"
