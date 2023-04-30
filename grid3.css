@@ -1,50 +1,41 @@
+img:nth-of-type(1) {
+    display: none;
+}
+body {
+    background-image: none;
+    opacity: 1;
+    max-width: 1206px;
+    min-height: 1063px;
+    font-size: 2rem;
+   }
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-img:nth-of-type(1) {
-    display: none;
-   }
-   body {
-    background-image: none;
-    opacity: 1;
-   }   
-
-body {
-    background-image: url(https://cdn.imgchest.com/files/6yxkcg98k7w.png);
-    background-repeat: no-repeat;
-    max-width: 1206px;
-    min-height: 1063px;
-    font-size: 2rem;
-    opacity: .5;
-}
 
 ul{
-  
+
    display: flex;
    flex-direction: column;
+   flex-wrap: wrap;
    font-family: 'Segoe UI';
+   text-transform: uppercase;
    font-weight: 600;
    font-size: 15px;
-   background-color:#0078e4;
    list-style: none;
-   padding: 15px 7px;
+   padding-left: 5px;
+   background-color:#0078e4;
+   color:white;
    
-    
-   
+  
 }
 
 li{
-   
-   padding:15px ;
-   text-transform: uppercase;
-   color:white;
-   border-bottom: 1px solid;
-   
-}
+    padding: 20px 12px;
+    border-bottom: 1px solid white;
   
-
+}
 .container > * {
     
     border: 2px dashed BLUE;
@@ -54,11 +45,12 @@ li{
 
 .container{
     display: grid;
-    
+    flex-wrap: wrap;
     grid-template-rows: minmax(52px, auto) minmax(175px, auto) minmax(64px, auto) minmax(370px, auto) minmax(72px, auto) minmax(325px, auto) ;
     grid-template-columns: minmax(20px, 161px) minmax(20px, 715px) minmax(20px, 325px) ;
     grid-template-areas: 
-        "one seven seven"
+        "one one one"
+        "seven seven seven"
         "two two two"
         "three three three"
         "four four eight" 
@@ -71,6 +63,7 @@ li{
 
 .box1 {
     grid-area: one;
+    
 }
  .box2 {
     grid-area: two;
