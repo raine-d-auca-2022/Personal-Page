@@ -1,0 +1,128 @@
+body > img:nth-of-type(1) {
+    display: none;
+   
+   }
+   body {
+    background-image: none;
+    opacity: 1;
+    max-width: 1206px;
+    min-height: 1063px;
+    font-size: 2rem;
+   }
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width:500px){
+    .container{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six"
+        "seven"
+        "eight"
+        "nine";
+    }
+}
+
+ul{
+
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #e0e0e0;
+    list-style: none;
+    padding: 15px 7px;
+    gap: 15px;
+    
+   
+ }
+
+
+.container > * {
+    
+    border: 2px dashed BLUE;
+   
+  
+}
+
+
+.container{
+    gap: 5px;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-rows: minmax(52px, auto) minmax(175px, auto) minmax(64px, auto) minmax(270px, auto) minmax(72px, auto) minmax(325px, auto) ;
+    grid-template-columns: minmax(20px, 310px) minmax(20px, 915px);
+    grid-template-areas: 
+        "one seven"
+        "two two"
+        "three three"
+        "eight six"
+        "eight four" 
+        "five four"
+         ;
+}
+
+
+img:nth-of-type(1){
+    width: 55%;
+    height: auto;
+}
+
+
+
+.box1 {
+    grid-area: one;
+    
+}
+.box2 {
+    grid-area: two;
+    background-image: url('https://lh3.googleusercontent.com/Zp0OVAomtM6Zf6kXrxzxsMhloUmX2n1pjB1eYw7RA0LoLS6VtNVxUkHXW9pBVdfCJQ-m4wSEwItOX2Zu8lIhP2rnIpLOplzof4r_gg9_MQ');
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
+.box3 {
+    grid-area: three;
+   
+}
+.box4 {
+    grid-area: four;
+    
+     
+        background-image: url('https://vesti.kg/images/343198274_946400516674992_1989666330577860722_n.jpg');
+        background-size: cover;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 150px;
+    
+    
+}
+.box5 {
+    grid-area: five;
+}
+.box6 {
+    grid-area: six;
+}
+.box7 {
+    grid-area: seven;
+}
+.box8 {
+    grid-area: eight;
+}
+
