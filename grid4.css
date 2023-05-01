@@ -49,15 +49,15 @@ li{
     gap: 15px;
     display: grid;
     flex-wrap: wrap;
-    grid-template-rows: minmax(52px, auto) minmax(175px, auto) minmax(64px, auto) minmax(270px, auto) minmax(72px, auto) minmax(325px, auto) ;
+    grid-template-rows: minmax(52px, auto) minmax(175px, auto) minmax(64px, auto) minmax(270px, auto) minmax(372px, auto) minmax(325px, auto) ;
     grid-template-columns: minmax(20px, 210px) minmax(20px, 815px);
     grid-template-areas: 
         "one one"
         "seven two"
+        "three three"
      
-        "four three"
         "four eight" 
-        "six eight"
+    
         "six five"
          ;
 }
