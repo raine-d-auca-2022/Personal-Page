@@ -45,6 +45,7 @@ li{
 }
 
 
+
 .container{
     gap: 15px;
     display: grid;
@@ -56,7 +57,7 @@ li{
         "seven two"
         "three three"
         "eight four" 
-        "five six"
+        "six five"
          ;
 }
 
@@ -89,6 +90,9 @@ li{
     align-items: center;
     justify-content: center;
     padding: 0 150px;
+    background-blend-mode: multiply; /* change blend mode */
+    background-color: grey; /* add darker background color */
+
 } 
 .box3 {
     grid-area: three;
