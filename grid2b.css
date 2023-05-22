@@ -3,11 +3,13 @@
     box-sizing: border-box;
 }
 body {
+    background-image: url(https://cdn.imgchest.com/files/6yxkcg98k7w.png);
     background-repeat: no-repeat;
     max-width: 1206px;
     min-height: 1063px;
     font-size: 2rem;
-    opacity: 1;
+    opacity: 0.5;
+   
 }
 @media (max-width:500px){
     .container{
@@ -113,6 +115,7 @@ a{
 .container > * {
     
     border: 2px dashed BLUE;
+    
 }
 
 .box4 li:hover{
